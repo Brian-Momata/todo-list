@@ -7,13 +7,13 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Todo List',
+     title: 'ToDo List',
+     template: path.resolve(__dirname, 'dist', 'index.html'),
     }),
   ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
   },
 
   module: {

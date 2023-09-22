@@ -1,3 +1,53 @@
+body, ul, h1, h2, select, button {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #a11111;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.main {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #007bff;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.header button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
 }

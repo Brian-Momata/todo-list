@@ -2,8 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Todo List</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="bundle.js"></script></head>
+    <title>ToDo List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="bundle.js"></script>
+  </head>
   <body>
+    <div class="app">
+      <div class="sidebar">
+        <div class="default-catergory">
+          
+        </div>
+      </div>
+      <div class="main">
+        <div class="header">
+          <h1>Todo List</h1>
+          <button id="toggleForm">Create a task</button>
+        </div>
+        <dialog>
+          <form id="taskForm">
+            <input type="text" id="task" name="task" placeholder="Task title">
+            <input type="date" id="dueDate" name="dueDate" placeholder="Due Date">
+            <select id="priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+            <button id="addTask">Add</button>
+          </form>
+        </dialog>
+        <div class="content">
+        </div>
+      </div>
+    </div>
   </body>
 </html>
