@@ -24,6 +24,25 @@ body {
   min-width: 250px;
 }
 
+.sidebar h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.sidebar ul.project-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul.project-links li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul.project-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .main {
   flex: 3;
   background-color: #fff;
