@@ -69,4 +69,39 @@ body {
   border-radius: 8px;
   padding: 10px 20px;
   cursor: pointer;
+  font-size: 16px;
+}
+
+#task-dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#task-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#task-form input[type="text"],
+#task-form textarea,
+#task-form input[type="date"],
+#task-form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#task-form button#add-task {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
 }
