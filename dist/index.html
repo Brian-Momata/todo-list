@@ -16,18 +16,20 @@
       <div class="main">
         <div class="header">
           <h1>Todo List</h1>
-          <button id="toggleForm">Create a task</button>
+          <button id="toggle-form">Create a task</button>
         </div>
-        <dialog>
-          <form id="taskForm">
-            <input type="text" id="task" name="task" placeholder="Task title">
+        <dialog id="task-dialog">
+          <form id="task-form">
+            <input type="text" id="title" name="title" placeholder="Task title">
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
             <input type="date" id="dueDate" name="dueDate" placeholder="Due Date">
             <select id="priority">
               <option value="low">Low</option>
               <option value="medium">Medium</option>
               <option value="high">High</option>
             </select>
-            <button id="addTask">Add</button>
+            <input type="text" name="category" id="category" placeholder="Category">
+            <button id="add-task">Create</button>
           </form>
         </dialog>
         <div class="content">
