@@ -9,7 +9,7 @@ export default function navLinkClickHandler(project) {
     const taskItem = document.createElement('div');
     taskItem.classList.add('task-item');
     taskItem.setAttribute('data-index', index);
-  
+   
     const taskId = `task-${index}`;
   
     const checkbox = document.createElement('input');
