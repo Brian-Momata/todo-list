@@ -8,6 +8,7 @@ export default function navLinkClickHandler(project) {
   project.tasks.forEach((task, index) => {
     const taskItem = document.createElement('div');
     taskItem.classList.add('task-item');
+    taskItem.setAttribute('data-project-title', project.title);
     taskItem.setAttribute('data-index', index);
    
     const taskId = `task-${index}`;
@@ -41,11 +42,6 @@ export default function navLinkClickHandler(project) {
     deleteButton.classList.add('delete-btn');
     deleteButton.textContent = 'Delete';
   
-    const editButton = document.createElement('button');
-    editButton.classList.add('edit-btn');
-    editButton.textContent = 'Edit';
-  
-    taskAction.appendChild(editButton);
     taskAction.appendChild(deleteButton);
   
     taskInfo.appendChild(taskDescription);

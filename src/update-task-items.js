@@ -1,3 +1,5 @@
+import projects from "./index";
+
 export default function updateTaskItems() {
   const taskItems = document.querySelectorAll('.task-item');
 
@@ -13,11 +15,14 @@ export default function updateTaskItems() {
     });
 
     deleteButton.addEventListener('click', () => {
-      // Handle delete action here
-    });
+      const projectTitle = taskItem.getAttribute('data-project-title');
+      const project = projects.find(p => p.title === projectTitle);
 
-    editButton.addEventListener('click', () => {
-      // Handle edit action here
+      if (project) {
+        const taskIndex = taskItem.dataset.index;
+        const taskToDelete = project.tasks[taskIndex];
+        project.removeTask(taskToDelete);
+      }
     });
   });
 }

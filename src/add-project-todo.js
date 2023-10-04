@@ -5,10 +5,8 @@ import allCategories from "./categories";
 import projects from "./index";
 
 export default function addTodoToProject(projectTitle, todo) {
-  const defaultProjectTitle = 'Default';
-  
   // Set the default project
-  let defaultProject = projects.find(p => p.title === defaultProjectTitle);
+  const defaultProject = projects.find(p => p.title === 'Default');
 
   // Add the todo to the default project
   defaultProject.addTask(todo);

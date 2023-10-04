@@ -155,16 +155,6 @@ body {
   cursor: pointer;
 }
 
-.edit-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  margin-right: 15px;
-}
-
-.delete-btn:hover,
-.edit-btn:hover {
+.delete-btn:hover {
   opacity: 0.8;
 }
