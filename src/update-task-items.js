@@ -7,7 +7,6 @@ export default function updateTaskItems() {
     const taskInfo = taskItem.querySelector('.task-info');
     const taskAction = taskItem.querySelector('.task-action');
     const deleteButton = taskItem.querySelector('.delete-btn');
-    const editButton = taskItem.querySelector('.edit-btn');
 
     taskItem.addEventListener('click', () => {
       taskInfo.style.display = taskInfo.style.display === 'none' ? 'block' : 'none';

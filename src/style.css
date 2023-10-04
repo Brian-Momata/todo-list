@@ -158,3 +158,15 @@ body {
 .delete-btn:hover {
   opacity: 0.8;
 }
+/* Color coding for priority levels */
+.low-priority {
+  background-color: #d3ffd3;
+}
+
+.medium-priority {
+  background-color: #fffa99;
+}
+
+.high-priority {
+  background-color: #ff9999;
+}

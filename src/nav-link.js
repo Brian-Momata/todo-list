@@ -34,6 +34,18 @@ export default function navLinkClickHandler(project) {
   
     const taskPriority = document.createElement('p');
     taskPriority.textContent = `Priority: ${task.priority}`;
+
+    switch (task.priority) {
+      case 'low':
+        taskItem.classList.add('low-priority');
+        break;
+      case 'medium':
+        taskItem.classList.add('medium-priority');
+        break;
+      case 'high':
+        taskItem.classList.add('high-priority');
+        break;
+    }
   
     const taskAction = document.createElement('div');
     taskAction.classList.add('task-action');
