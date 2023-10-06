@@ -170,3 +170,25 @@ body {
 .high-priority {
   background-color: #ff9999;
 }
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    min-width: 100%;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header button {
+    margin-top: 10px;
+  }
+}
